@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+preprocess_movies.csv
+preprocessed_movies.pkl
