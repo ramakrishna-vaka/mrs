@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // Fetch titles from the backend
     axios
-      .get('http://127.0.0.1:5000/get-titles')
+      .get('https://mrs-4miz.onrender.com/get-titles')
       .then((response) => {
         console.log("Received data from backend:", response.data);
         setTitles(response.data.titles || []);
@@ -34,7 +34,7 @@ function App() {
     }
 
     axios
-      .post('http://127.0.0.1:5000/recommend-movie', { movie: selectedMovie })
+      .post('https://mrs-4miz.onrender.com/recommend-movie', { movie: selectedMovie })
       .then((response) => {
         console.log("Recommendations received:", response.data.recommendations);
         setRecommendations(response.data.recommendations || []);
